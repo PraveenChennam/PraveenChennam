@@ -1,0 +1,9 @@
+"src/assets/css/bootstrap.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/dataTables.bootstrap.css"
+
+     "src/assets/js/jquery.min.js",
+            "src/assets/js/bootstrap.js",
+            "src/assets/js/jquery.dataTables.js",
+            "src/assets/js/dataTables.bootstrap.js"
