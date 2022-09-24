@@ -1,0 +1,663 @@
+<!DOCTYPE>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Producer Catalogue</title>
+
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+<link href="assets/css/style.css" rel="stylesheet" />
+<link href="assets/css/dataTables.bootstrap.css" rel="stylesheet" />
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+ #accordion ul li{
+ list-style-type:none;
+ }
+ </style>
+</head>
+<body>
+<div class="content-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Catalogue Sources </a> </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+          <div class="panel-body">
+          <ul>
+          <li><input name="" type="checkbox" value=""> Bituminous</li>
+          <li><input name="" type="checkbox" value="">  Bituminous MS</li>
+          <li><input name="" type="checkbox" value=""> Bituminous LW</li>
+         <li><input name="" type="checkbox" value=""> Concrete CA</li>
+          <li><input name="" type="checkbox" value=""> Concrete FA</li>
+          <li><input name="" type="checkbox" value="">  Unkonwn</li>
+          </ul>
+          
+          </div> 
+               
+           
+          </div>
+        </div>
+        <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Displayed Columns </a> </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse in" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+             <div class="panel-body">
+              <ul>
+          <li>Bituminous</li>
+          <li>Bituminous MS</li>
+          <li>Bituminous LW</li>
+          <li>Concrete CA</li>
+          <li>Concrete FA</li>
+           <li>Unkonwn</li>
+          </ul>
+             
+             </div> 
+          </div>
+        </div>
+        
+        <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse2">Catalogue </a> </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse in" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+            <div class="panel-body">
+             <ul>
+          <li>Bituminous</li>
+          <li>Bituminous MS</li>
+          <li>Bituminous LW</li>
+        
+          </ul>
+            
+            </div> 
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-9">
+        <div class="panel panel-default panelbgs6">
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table table-bordered  table-striped  dataTable no-footer" id="dataTables-example">
+                <thead>
+                  <tr>
+                    <th>Producer</th>
+                    <th>Quarry</th>
+                    <th>Quarry Code </th>
+                    <th>Material Type</th>
+                    <th>SAC </th>
+                    <th>RSLA-BIT</th>
+                    <th>RSSM-HMAC</th>
+                    <th>BIT-RSMD</th>
+                    <th>CA-RSAN</th>
+                    <th> Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">04000625</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">C</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">B</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>IN</td>
+                    <td class="center">Saucedo</td>
+                    <td class="center">Maria</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$6,276.07</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Prescott</td>
+                    <td class="center">Bartlett</td>
+                    <td class="center">C</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,025.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr >
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Tatyana</td>
+                    <td class="center">Stephaine</td>
+                    <td class="center">B</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$500.00</td>
+                    <td class="center">&nbsp;</td>
+                  </tr>
+                  <tr class="odd gradeX">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Rhona</td>
+                    <td class="center">Gloria</td>
+                    <td class="center">C</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$958.86</td>
+                    <td class="center"><span class="label label-table label-success">Active</span></td>
+                  </tr>
+                  <tr class="even gradeC">
+                    <td>Advantage Asphalt Products</td>
+                    <td>OP</td>
+                    <td class="center">Quinn Flynn</td>
+                    <td class="center">Ferna</td>
+                    <td class="center">A</td>
+                    <td class="center">$ 0.00</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">&nbsp;</td>
+                    <td class="center">$1,024.00</td>
+                    <td class="center"><span class="label label-table label-danger">Bad Debt</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Start-->
+<script src="assets/js/jquery.dataTables.js"></script>
+<script src="assets/js/dataTables.bootstrap.js"></script>
+<script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+</body>
+</html>
