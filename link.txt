@@ -1,0 +1,1 @@
+https://www.c-sharpcorner.com/article/how-to-pass-data-between-the-component-to-another-component-in-angular2/#:~:text=Child%20to%20parent%20component,emit%20it%20from%20the%20child
